@@ -6,3 +6,7 @@ module.exports =
             name: context.data.name || 'Anonymous'
         }));
     }
+
+function view() {
+  
+}
