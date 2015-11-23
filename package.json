@@ -1,0 +1,30 @@
+{
+  "name": "trello-github-power-up",
+  "version": "1.0.0",
+  "description": "This is the description",
+  "main": "webtasks/github-power-up.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "mocha web-tasks/github-power-up-simple-test.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/n4ch03/trello-github-power-up.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/n4ch03/trello-github-power-up/issues"
+  },
+  "homepage": "https://github.com/n4ch03/trello-github-power-up#readme",
+  "dependencies": {
+    "async": "^1.5.0",
+    "request": "^2.67.0"
+  },
+  "devDependencies": {
+    "chai": "^3.4.1",
+    "mock-require": "^1.2.0"
+  }
+}
