@@ -10,10 +10,18 @@ Given that:
 * I do not need to mantain an Amazon server or something like that to have an endpoint listening to Github webhooks: (Webtasks) [https://webtask.io/]. Easy to deploy and quick to develop :)
 * Pricing of Webtasks for this use case are more than (attractive) [https://webtask.io/pricing]
 
-*I started a POC that allows me to*:
+**I started a POC that allows me to:**
 
+* Any time that I commit and push to MASTER with the format **#finishes {cardID}** the cardId in Trello will be moved to **Finished List**. 
+* Any time that I commit and push to MASTER with the format **#accepts {cardID}** the cardId in Trello will be moved to **Accepted List**.
+* Any time I create a pull request if any commit has the any of the previous formats, a comment with a link to the pull request will be created and the Card will be moved to **Ready To Review List**.
 
-
+The Flow I'm using in Trello is simple:
+* Open: Cards for the current sprint
+* In Progress: Cards that we are developing
+* Ready To Review: Cards ready to review(pull request)
+* Finished: Merged and ready for some extra testing, for example integration automated tests or functional automated test.
+* Accepted: The Card is in the main branch and fully tested 
 
 
 ## How to install:
