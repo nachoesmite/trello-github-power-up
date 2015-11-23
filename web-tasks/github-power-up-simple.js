@@ -6,8 +6,8 @@ var config = {
   //case insensitive search i
   //multi line m
   // not global search to match the first occurence
-  trelloKey: "f6f69490dd4702462cf7f7b969a5a632",
-  trelloToken: "29110cc140dfdee85f202459959c1ce408ea311c1cb674d38e6adb7822bf0793",
+  trelloKey: "b698760335546616a2284800d5db6d1d",
+  trelloToken: "7b89374ca1afa36d48c0aee6bfc6cbb7870c095d8efbad7dfa83fc286b852ae5",
   githubUA: "n4ch03",
   finishedRegExp: /#finishes {(\w+)}/im,
   acceptedRegExp: /#accepts {(\w+)}/im,
@@ -19,6 +19,13 @@ var config = {
 };
 
 module.exports = function (context, cb) {
+  config.trelloKey = context.data.TRELLO_KEY || config.trelloKey;
+  config.trelloToken = context.data.TRELLO_TOKEN || config.trelloToken;
+
+  config.boardIds.readyToReview = context.data.READY_TO_REVIEW || config.boardIds.readyToReview;
+  config.boardIds.finished = context.data.FINISHED || config.boardIds.finished;
+  config.boardIds.accepted = context.data.ACCEPTED || config.boardIds.accepted;
+
   if(typeof context.data.pull_request === 'object') {
     processPull(context.data, cb);
   } else {
