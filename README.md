@@ -38,6 +38,8 @@ We will be seting webhooks for 2 actions:
 
 ![](https://dl.dropboxusercontent.com/u/3835331/GIthubWebhooks.gif)
 
+### Working in Master Sample
+![](https://dl.dropboxusercontent.com/u/3835331/MasterCommits.gif)
 
 ### Pull Request Sample
 ![](https://dl.dropboxusercontent.com/u/3835331/PullRequest.gif)
