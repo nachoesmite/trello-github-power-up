@@ -214,7 +214,6 @@ describe('PowerUp Webtask Test', function() {
           }
         };
         wt({data:data}, function(error, body){
-          console.log(body);
           body.should.have.property("message", "Pull Processed");
           body.should.have.property("results").to.deep.equal(buildPullOracle(["New Pull Request from n4ch03: http://pullrequest"]));
         });

@@ -6,24 +6,19 @@ var config = {
   //case insensitive search i
   //multi line m
   // not global search to match the first occurence
+  trelloKey: "f6f69490dd4702462cf7f7b969a5a632",
+  trelloToken: "29110cc140dfdee85f202459959c1ce408ea311c1cb674d38e6adb7822bf0793",
   githubUA: "n4ch03",
   finishedRegExp: /#finishes {(\w+)}/im,
   acceptedRegExp: /#accepts {(\w+)}/im,
-  boardIds: {}
+  boardIds: {
+    readyToReview: "5650efcf30344c50260e27b7",
+    finished: "565089d21d02cd33b5e31164",
+    accepted: "565089d40f6103ddb430baed"
+  }
 };
 
 module.exports = function (context, cb) {
-  config.trelloKey = ctx.data.TRELLO_KEY;
-  config.trelloToken = ctx.data.TRELLO_TOKEN;
-  config.boardIds.readyToReview = ctx.data.READY_TO_REVIEW;
-  config.boardIds.finished = ctx.data.FINISHED;
-  config.boardIds.accepted = ctx.data.ACCEPTED;
-
-  if (config.trelloKey && config.trelloToken && config.boardIds.readyToReview
-      && config.boardIds.finished && config.boardIds.accepted === 'undefined') {
-        return cb(new Error("Missing configuration secrets"))
-      }
-
   if(typeof context.data.pull_request === 'object') {
     processPull(context.data, cb);
   } else {
