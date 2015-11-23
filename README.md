@@ -37,3 +37,7 @@ We will be seting webhooks for 2 actions:
 * pull request: we will be listening every new pull request, check if some commit has cards associated and move the Trello cards to the Ready to Review List and a comment with a link to the pull request.
 
 ![](https://dl.dropboxusercontent.com/u/3835331/GIthubWebhooks.gif)
+
+
+### Pull Request Sample
+![](https://dl.dropboxusercontent.com/u/3835331/PullRequest.gif)
