@@ -1,6 +1,22 @@
 # trello-github-power-up
 
-## HOW TO INSTALL IT AND USE:
+## Motivation
+
+Recently Trello released [Github Power Up](http://blog.trello.com/github-and-trello-integrate-your-commits/). 
+
+Given that:
+* Most of things I would like to have integrated with Github are related to move Cards automatically from List to List depending on Github action
+* Trello API and Github Webhooks are free to use
+* I do not need to mantain an Amazon server or something like that to have an endpoint listening to Github webhooks: (Webtasks) [https://webtask.io/]. Easy to deploy and quick to develop :)
+* Pricing of Webtasks for this use case are more than (attractive) [https://webtask.io/pricing]
+
+*I started a POC that allows me to*:
+
+
+
+
+
+## How to install:
 
 ### Get Trello Key and Token
 
