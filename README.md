@@ -1,5 +1,5 @@
 # trello-github-power-up
-https://api.travis-ci.org/n4ch03/trello-github-power-up.svg?branch=master
+![](https://api.travis-ci.org/n4ch03/trello-github-power-up.svg?branch=master)
 ## Motivation
 
 Recently Trello released [Github Power Up](http://blog.trello.com/github-and-trello-integrate-your-commits/). 
