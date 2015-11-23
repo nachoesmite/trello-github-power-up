@@ -23,8 +23,21 @@ The Flow I'm using in Trello is simple:
 * Finished: Merged and ready for some extra testing, for example integration automated tests or functional automated test.
 * Accepted: The Card is in the main branch and fully tested 
 
+## How to test
 
-## How to install:
+### Prerequisites
+* nodejs >=4 
+* npm
+* [wt] (https://www.npmjs.com/package/wt-cli)
+
+### Running tests
+
+```
+npm install
+npm test
+```
+
+## How to install
 
 ### Get Trello Key and Token
 
@@ -67,3 +80,13 @@ We will be seting webhooks for 2 actions:
 
 ### Pull Request Sample
 ![](https://dl.dropboxusercontent.com/u/3835331/PullRequest.gif)
+
+
+## ROADMAP
+
+* Build a better Test Harness
+* Include more tests specially for the pull request scenario
+* Think about more flows to map between Github and Trello
+* Have a backend (auth0+react+firebase||mongodb) to manage different boards & github integrations. 
+* Bit bucket integration.
+* Research on good alternatives to have a mapping between Trello Users & Github Users
